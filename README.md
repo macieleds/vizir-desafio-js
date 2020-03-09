@@ -22,7 +22,7 @@ Para rodar os testes, baixe e instale as dependências do projeto com o comando 
 
 <p class="has-line-data" data-line-start="37" data-line-end="38"><img src="https://i.ibb.co/n60KMv1/teste-Function.jpg" alt="N|Solid"></p>
 <h3 class="code-line" data-line-start=39 data-line-end=40 ><a id="2__Autenticao_de_usurio_39"></a>2 - Teste Unitário</h3>
-<p class="has-line-data" data-line-start="41" data-line-end="42">Para a realização do teste unitário, abra o console, aponte para a pasta onde está o mock de teste e execute o comando <b>npm test </b></p>
+<p class="has-line-data" data-line-start="41" data-line-end="42">Para a realização do teste unitário, abra o console, aponte para a pasta de testes, onde está o mock de teste, e execute o comando <b>npm test </b></p>
 
 <p class="has-line-data" data-line-start="47" data-line-end="48"><img src="https://i.ibb.co/F0Jst85/jesttest1.jpg" alt="N|Solid"></p>
 
