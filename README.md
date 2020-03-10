@@ -18,9 +18,17 @@ Para rodar os testes, baixe e instale as dependências do projeto com o comando 
   
   
 <h3 class="code-line" data-line-start=29 data-line-end=30 ><a id="1__Criao_de_usurio_29"></a>1 - Executando a aplicação:</h3>
-<p class="has-line-data" data-line-start="31" data-line-end="32">A execução da aplicação foi testada através do console do Google Chrome, executando a função e informando (na ordem): DDD DE ORIGEM, DDD DE DESTINO, MINUTOS DA LIGAÇÃO, ID DO PLANO (30 = FALEMAIS30, 60 = FALEMAIS60, 120 = FALEMAIS120):</p>
+<p class="has-line-data" data-line-start="31" data-line-end="32">Execução da aplicação através do console do Google Chrome, executando a função e informando (na ordem): DDD DE ORIGEM, DDD DE DESTINO, MINUTOS DA LIGAÇÃO, ID DO PLANO (30 = FALEMAIS30, 60 = FALEMAIS60, 120 = FALEMAIS120):</p>
 
 <p class="has-line-data" data-line-start="37" data-line-end="38"><img src="https://i.ibb.co/n60KMv1/teste-Function.jpg" alt="N|Solid"></p>
+
+<h3 class="code-line" data-line-start=29 data-line-end=30 ><a id="1__Criao_de_usurio_29"></a>2 - Executando a aplicação - (Tela):</h3>
+<p class="has-line-data" data-line-start="31" data-line-end="32">Execução da aplicação através de interface:
+
+<p class="has-line-data" data-line-start="37" data-line-end="38"><img src="https://i.ibb.co/48mfhhg/telz1.jpg" alt="N|Solid"></p>
+
+
+
 <h3 class="code-line" data-line-start=39 data-line-end=40 ><a id="2__Autenticao_de_usurio_39"></a>2 - Teste Unitário</h3>
 <p class="has-line-data" data-line-start="41" data-line-end="42">Para a realização do teste unitário, abra o console, aponte para a pasta de testes, onde está o mock de teste, e execute o comando <b>npm test </b></p>
 
