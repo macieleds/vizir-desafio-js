@@ -2,16 +2,98 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Vizir</title>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600" rel="stylesheet">
+
+
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+
 </head>
 
 <body>
+    <div id="booking" class="section">
+        <div class="section-center">
+            <div class="container">
+                <div class="row">
+                    <div class="booking-form">
+                        <form>
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <select id="planos" class="form-control">
+										<option value="30">FaleMais30</option>
+										<option value="60">FaleMais60</option>
+										<option value="120">FaleMais120</option>
+									</select>
+                                    <span class="form-label">ESCOLHA O SEU PLANO</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <select id="dddo" class="form-control">
+										<option value="11">11</option>
+										<option value="16">16</option>
+										<option value="17">17</option>
+										<option value="18">18</option>
+									</select>
+                                    <span class="select-arrow"></span>
+                                    <span class="form-label">DDD de Origem</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <select id="ddddes" class="form-control">
+										<option value="16">16</option>
+										<option value="11" class="valor1">11</option>
+										<option value="17">17</option>
+										<option value="18">18</option>
+									</select>
+                                    <span class="select-arrow"></span>
+                                    <span class="form-label">DDD de Destino</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input id="tempo" class="form-control" type="number">
+                                    <span class="form-label">TEMPO DE LIGAÇÃO</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input id="valorSemPlano" class="form-control" readonly>
+                                    <span class="form-label">VALOR SEM PLANO</span>
+                                </div>
+                            </div>
 
-    <h1>TESTE</h1>
-
-
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input id="valorPlano" class="form-control" readonly>
+                                    <span class="form-label">VALOR COM PLANO</span>
+                                </div>
+                            </div>
+                            <div class="btn-form">
+                                <div class="col-md-4">
+                                    <div class="form-btn">
+                                        <button type="button" id="calcular" class="submit-btn">CALCULAR VALORES</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
 </body>
+
 
 </html>

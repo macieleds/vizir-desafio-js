@@ -46,9 +46,35 @@ var planos = [{
 ]
 
 
+document.getElementById('dddo').onchange = function() {
+    var dddOrigem = document.getElementById("dddo").value;
+    if (dddOrigem == '11') {
+        document.getElementById("ddddes").value = '16';
+        document.getElementById("ddddes").disabled = false;
+    } else {
+        document.getElementById("ddddes").value = '11';
+        document.getElementById("ddddes").disabled = true;
+    }
+}
+
+
+document.getElementById('calcular').onclick = function calcular() {
+
+    var plano = document.getElementById("planos").value;
+    var dddOrigem = document.getElementById("dddo").value;
+    var dddDestino = document.getElementById("ddddes").value;
+    var tempo = document.getElementById("tempo").value;
+    var resCalculo = calcula(dddOrigem, dddDestino, tempo, plano);
+    document.getElementById("valorSemPlano").value = resCalculo.valorSemPlano.toFixed(2);
+    document.getElementById("valorPlano").value = resCalculo.valorPlano.toFixed(2);
+
+};
+
+
+
 function calcula(d1, d2, minutos, planoId) {
-    const dddValor = tarifas.find(a => a.dddOrigem === d1 && a.dddDestino === d2).valor
-    const plano = planos.find(a => a.minutos === planoId)
+    const dddValor = tarifas.find(a => a.dddOrigem == d1 && a.dddDestino == d2).valor
+    const plano = planos.find(a => a.minutos == planoId)
     const planoMinutos = plano ? plano.minutos : 30
     const minutosRestante = (minutos - planoMinutos)
     return { valorPlano: (minutosRestante > 0 ? minutosRestante : 0) * dddValor * 1.1, valorSemPlano: minutos * dddValor }
